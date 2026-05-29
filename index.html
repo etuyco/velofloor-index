@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Velofloor | Secure Your Digital Headquarters</title>
+    <meta name="title" content="Velofloor | Secure Your Digital Headquarters">
+    <meta name="description" content="Bring the energy of the office to your remote team. Join the Velofloor waitlist. Launching June 15, 2026.">
+    <meta name="author" content="Velofloor Inc.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Inter+Tight:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            paper: '#fdfaf4',
+                            ink: '#0d0e10',
+                            forest: '#047857',
+                            emerald: '#22c55e',
+                            sand: '#e5dcc8',
+                            slate: '#334155',
+                            blue: '#2563eb',
+                            green: '#10b981',
+                            amber: '#f59e0b',
+                            purple: '#7c3aed',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Fraunces', 'serif'],
+                        body: ['Inter Tight', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fdfaf4;
+            color: #0d0e10;
+            -webkit-font-smoothing: antialiased;
+        }
+        .grid-bg {
+            background-image:
+              linear-gradient(rgba(229, 220, 200, 0.6) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(229, 220, 200, 0.6) 1px, transparent 1px);
+            background-size: 32px 32px;
+            background-position: center top;
+        }
+        .tracking-tight-display { letter-spacing: -0.025em; }
+        .tracking-wide-mono { letter-spacing: 0.1em; }
+    </style>
+</head>
+<body class="font-body selection:bg-brand-emerald selection:text-white flex flex-col min-h-screen relative grid-bg">
+
+    <!-- Minimal Centered Branding Logo (No Links or Buttons) -->
+    <header class="w-full pt-10 pb-6 flex justify-center z-10 relative">
+        <div class="flex items-center gap-3 text-brand-forest">
+            <div class="w-10 h-10 bg-brand-forest rounded-lg flex items-center justify-center text-white shadow-sm">
+                <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <span class="font-display font-bold text-3xl tracking-tight-display text-brand-ink">Velofloor</span>
+        </div>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center py-12 relative z-10">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 bg-brand-forest/10 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 flex flex-col items-center text-center opacity-0 animate-fade-in-up">
+            
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-brand-sand rounded-full font-mono text-[10px] font-bold text-brand-slate uppercase tracking-wide-mono shadow-sm mb-6">
+                <i data-lucide="lock" class="w-3 h-3 text-brand-forest"></i> Private Beta Waitlist
+            </div>
+
+            <!-- Balanced layout forced onto exactly two lines using whitespace-nowrap -->
+            <h1 class="font-display font-black text-[6.5vw] sm:text-5xl md:text-6xl lg:text-[4.5rem] tracking-tight-display leading-[1.15] text-brand-ink w-full max-w-none mx-auto mb-6">
+                <span class="whitespace-nowrap">Bring the energy of the <span class="text-brand-forest underline decoration-brand-emerald/40 decoration-[6px] md:decoration-8 underline-offset-4">office</span></span><br>
+                <span class="whitespace-nowrap">to your remote team.</span>
+            </h1>
+            
+            <!-- Optimized two-sentence copy highlighting 'replaces' -->
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
+                Velofloor is a Virtual Headquarters built to restore natural accountability and visibility to distributed companies. Our persistent digital environment <span class="text-red-500">replaces</span> invasive screen trackers with frictionless, face-to-face team collaboration.
+            </p>
+
+            <!-- Live Launch Countdown Component -->
+            <div class="w-full max-w-xl mx-auto mb-10 bg-white p-6 rounded-2xl border border-brand-sand shadow-sm">
+                <div class="text-[11px] font-mono text-gray-500 uppercase tracking-widest font-bold mb-4 flex items-center justify-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-brand-emerald animate-ping"></span> Live Countdown to Launch
+                </div>
+                
+                <div class="grid grid-cols-4 gap-4 text-brand-ink">
+                    <div class="bg-brand-paper p-3 rounded-lg border border-brand-sand">
+                        <div id="countdown-days" class="font-mono font-bold text-3xl md:text-4xl tracking-tight">00</div>
+                        <div class="text-[9px] font-mono text-gray-400 uppercase tracking-widest mt-1">Days</div>
+                    </div>
+                    <div class="bg-brand-paper p-3 rounded-lg border border-brand-sand">
+                        <div id="countdown-hours" class="font-mono font-bold text-3xl md:text-4xl tracking-tight">00</div>
+                        <div class="text-[9px] font-mono text-gray-400 uppercase tracking-widest mt-1">Hours</div>
+                    </div>
+                    <div class="bg-brand-paper p-3 rounded-lg border border-brand-sand">
+                        <div id="countdown-minutes" class="font-mono font-bold text-3xl md:text-4xl tracking-tight">00</div>
+                        <div class="text-[9px] font-mono text-gray-400 uppercase tracking-widest mt-1">Mins</div>
+                    </div>
+                    <div class="bg-brand-paper p-3 rounded-lg border border-brand-sand">
+                        <div id="countdown-seconds" class="font-mono font-bold text-3xl md:text-4xl tracking-tight">00</div>
+                        <div class="text-[9px] font-mono text-gray-400 uppercase tracking-widest mt-1">Secs</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Compelling Conversion Form -->
+            <div id="waitlist" class="w-full max-w-xl mx-auto mb-12">
+                <form id="waitlist-form" class="flex flex-col sm:flex-row gap-3 w-full bg-white p-2 rounded-lg border border-brand-sand shadow-lg">
+                    <input 
+                        type="email" 
+                        id="email-input"
+                        required
+                        placeholder="Enter your work email address" 
+                        class="flex-1 px-4 py-3 bg-transparent text-brand-ink placeholder-gray-400 focus:outline-none text-base"
+                    >
+                    <button 
+                        type="submit" 
+                        class="bg-brand-emerald hover:bg-[#16a34a] text-white px-8 py-3 rounded-md font-bold transition-all shadow-sm text-base whitespace-nowrap"
+                    >
+                        Secure Your Spot
+                    </button>
+                </form>
+
+                <!-- Success Message (Hidden by default) -->
+                <div id="success-message" class="hidden w-full bg-green-50 border border-green-200 text-brand-forest p-4 rounded-lg mt-2 text-center font-medium">
+                    <div class="flex items-center justify-center gap-2">
+                        <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                        <span>You're on the list. Keep an eye on your inbox.</span>
+                    </div>
+                </div>
+                
+                <p class="text-xs text-gray-500 mt-4 flex items-center justify-center gap-1.5 font-mono tracking-wide-mono uppercase">
+                    <i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-forest"></i> Lock in lifetime early-adopter pricing.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Super Clean Static Footer (Strictly No Actionable Links/Buttons) -->
+    <footer class="w-full py-8 text-center text-xs text-gray-400 font-mono uppercase tracking-wide-mono border-t border-brand-sand mt-auto z-10 relative">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>© 2026 Velofloor Inc. All rights reserved. Alberta, Canada.</p>
+            <div class="flex gap-4">
+                <span>SOC 2 Type II Ready</span>
+                <span>•</span>
+                <span>End-to-End Encrypted</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Countdown Logic & Icon Instantiation -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Count down to June 15, 2026
+        const targetDate = new Date("June 15, 2026 00:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference <= 0) {
+                document.getElementById("countdown-days").textContent = "00";
+                document.getElementById("countdown-hours").textContent = "00";
+                document.getElementById("countdown-minutes").textContent = "00";
+                document.getElementById("countdown-seconds").textContent = "00";
+                return;
+            }
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            // Format numbers with leading zeros
+            document.getElementById("countdown-days").textContent = days.toString().padStart(2, '0');
+            document.getElementById("countdown-hours").textContent = hours.toString().padStart(2, '0');
+            document.getElementById("countdown-minutes").textContent = minutes.toString().padStart(2, '0');
+            document.getElementById("countdown-seconds").textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Initialize and tick every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Handle Waitlist Form Submission
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const emailInput = document.getElementById('email-input');
+            const email = emailInput.value;
+
+            console.log("New Waitlist Subscriber:", email);
+
+            // UI Transition
+            this.classList.add('hidden');
+            document.getElementById('success-message').classList.remove('hidden');
+            document.getElementById('success-message').classList.add('animate-fade-in-up');
+        });
+    </script>
+</body>
+</html>
