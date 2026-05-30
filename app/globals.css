@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #fdfaf4;
+  color: #0d0e10;
+  -webkit-font-smoothing: antialiased;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(229, 220, 200, 0.6) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(229, 220, 200, 0.6) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: center top;
+}
+
+.tracking-tight-display {
+  letter-spacing: -0.025em;
+}
+
+.tracking-wide-mono {
+  letter-spacing: 0.1em;
+}
