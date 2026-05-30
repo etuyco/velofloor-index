@@ -21,7 +21,7 @@ export async function POST(request: Request) {
   }
 
   try {
-    unsubscribe(email);
+    await unsubscribe(email);
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("Failed to process unsubscribe:", err);

@@ -48,7 +48,7 @@ export async function sendWaitlistEmails(email: string): Promise<void> {
 
   // Durably record the signup (also re-subscribes a previously opted-out
   // address — submitting the form is fresh express consent).
-  recordSignup(email);
+  await recordSignup(email);
 
   // 1. Notify admins of the new signup (internal mail — no unsubscribe).
   const adminMail = adminNotificationEmail(email);

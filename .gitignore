@@ -10,9 +10,6 @@
 # production
 /build
 
-# local data (SQLite subscriber store)
-/data
-
 # misc
 .DS_Store
 *.pem
