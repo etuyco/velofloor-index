@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 // ISO 8601 (local time) — parsed reliably across browsers. Safari returns
 // Invalid Date for the "June 15, 2026 00:00:00" format.
-const TARGET_DATE = new Date("2026-06-15T00:00:00").getTime();
+const TARGET_DATE = new Date("2026-06-22T00:00:00").getTime();
 
 type TimeLeft = {
   days: string;
